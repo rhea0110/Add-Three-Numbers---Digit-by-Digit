@@ -1,0 +1,27 @@
+// Given three numbers, add them digit by digit and return the sum.
+
+Complete the function addDigitByDigit() that accepts 3 integers and returns the sum , added digit by digit
+
+import java.util.Scanner;
+
+class Result{
+  	static int addDigitByDigit(int a,int b, int c){
+       if ((a >= 0 && a <= 1000) && (b >= 0 && b <= 1000) && (c >= 0 && c <= 1000)) {
+            int sum;
+            return sum = a + b + c;
+        } else {
+            return -1;
+        }
+    }
+}
+
+class Main{
+  public static void main(String[] args){
+    Scanner in = new Scanner(System.in);
+    int a = in.nextInt();
+    int b = in.nextInt();
+    int c = in.nextInt();
+    System.out.println(Result.addDigitByDigit(a,b,c));
+  }
+}
+
